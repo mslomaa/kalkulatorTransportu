@@ -18,7 +18,7 @@ submitButton.addEventListener('click', function(){
 
     }
 
-    if (km.value > 200) {
+    if (km.value >= 200) {
         newPrice = newPerson + newDay;
         return checkResult.innerHTML = newPrice + " plnów";
     }
@@ -55,7 +55,7 @@ function calcKm(){
             return priceCalc;
         }
     }
-    if(km.value > 200){
+    if(km.value >= 200){
         calcPerson();
     }
 }
